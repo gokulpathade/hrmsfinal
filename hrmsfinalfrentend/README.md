@@ -68,3 +68,218 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---------------******************************* -->
+<!-- ---------------******************************* -->
+    
+<div style={{ marginTop: 100 }}>
+        <div style={styles.container}>
+          <div className='mb-3'>
+            <label>First Name</label>
+            <input
+              onChange={(event) => {
+                setName(event.target.value)
+              }}
+              className='form-control'
+              type='text'
+            />
+          </div>
+  
+          <div className='mb-3'>
+            <label>Last Name</label>
+            <input
+              onChange={(event) => {
+                setLast_Name(event.target.value)
+              }}
+              className='form-control'
+              type='text'
+            />
+          </div>
+          <div className='mb-3'>
+            <label>Address</label>
+            <input
+              onChange={(event) => {
+                setAddress(event.target.value)
+              }}
+              className='form-control'
+              type='text'
+            />
+          </div>
+  
+  
+          <div className='mb-3'>
+            <label>Phone Number</label>
+            <input
+              onChange={(event) => {
+                setmobileNo(event.target.value)
+              }}
+              className='form-control'
+              type='tel'
+            />
+          </div>
+  {/* <div>
+            
+         {/* <select
+            disabled={false}
+            value={Role}
+            onChange={(event) => setSelected(event.target.value)} 
+        >
+        <option >Select</option>
+
+         {optionList?.map((item) =>  
+            <option key={item.Roleid} value={item.Roles}>
+             {item.Roles}
+            </option>
+          )}
+        </select> */}
+      
+      {/* </div> */} 
+          <div className='mb-3'>
+            <label>Email</label>
+            <input
+              onChange={(event) => {
+                setEmail(event.target.value)
+              }}
+              className='form-control'
+              type='Email'
+            />
+          </div>
+  
+          <div className='mb-3'>
+            <label>Password</label>
+            <input
+              onChange={(event) => {
+                setPassword(event.target.value)
+              }}
+              className='form-control'
+              type='Password'
+            />
+          </div>
+  
+          <div className='mb-3'>
+            <label>Confirm Password</label>
+            <input
+              onChange={(event) => {
+                setConfirmPassword(event.target.value)
+              }}
+              className='form-control'
+              type='Password'
+            />
+          </div>
+  
+          <div className='mb-3' style={{ marginTop: 40 }}>
+            <div>
+              Already have an account? <Link to='/SignIn'>SignIn here</Link>
+            </div>
+            <button onClick={signup} style={styles.signinButton}>
+              Signup
+            </button>
+          </div>
+        </div>
+      </div>
+   
+<!-- ---------------******************************* -->
+
+    {/* <Grid item xs={12}>
+              <FormControl variant="standard" fullWidth>
+                <InputLabel htmlFor="input-with-icon-adornment">
+                  Email
+                </InputLabel>
+                <Input
+                  id="input-with-icon-adornment"
+                  onChange={(event) => {
+                    setEmail(event.target.value);
+                  }}
+                  className="form-control"
+                  type="email"
+                />
+              </FormControl>
+            </Grid> */}
+            {/* <Grid item xs={12}>
+              <FormControl variant="standard" fullWidth>
+                <InputLabel htmlFor="input-with-icon-adornment">
+                  Address
+                </InputLabel>
+                <Input
+                  id="input-with-icon-adornment"
+                  onChange={(event) => {
+                    setAddress(event.target.value);
+                  }}
+                  className="form-control"
+                  type="text"
+                />
+              </FormControl>
+            </Grid> */}
+            {/* <Grid item xs={12}>
+              <FormControl variant="standard" fullWidth>
+                <InputLabel htmlFor="input-with-icon-adornment">
+                  Contact
+                </InputLabel>
+                <Input
+                  id="input-with-icon-adornment"
+                  onChange={(event) => {
+                    setmobileNo(event.target.value);
+                  }}
+                  className="form-control"
+                  type="tel"
+                />
+              </FormControl>
+            </Grid> */}
+            {/* <Grid item xs={12} sm={6}>
+              <FormControl variant="standard" fullWidth>
+                <InputLabel htmlFor="input-with-icon-adornment">
+                  Password
+                </InputLabel>
+                <Input
+                  id="input-with-icon-adornment"
+                  onChange={(event) => {
+                    setPassword(event.target.value);
+                  }}
+                  className="form-control"
+                  type="password"
+                />
+              </FormControl>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <FormControl variant="standard" fullWidth>
+                <InputLabel htmlFor="input-with-icon-adornment">
+                  Confirm Password
+                </InputLabel>
+                <Input
+                  id="input-with-icon-adornment"
+                  onChange={(event) => {
+                    setConfirmPassword(event.target.value);
+                  }}
+                  className="form-control"
+                  type="password"
+                />
+              </FormControl>
+            </Grid> */}
+<!-- ---------------******************************* -->
+<!-- ---------------******************************* -->
+<!-- ---------------******************************* -->
+<!-- ---------------******************************* -->

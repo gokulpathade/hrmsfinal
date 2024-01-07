@@ -1,20 +1,26 @@
 
 import './App.css';
-import SideBar from './dashboard/SideBar.jsx';
+import SideBar from './components/dashboard/SideBar.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import UserDashboard from './dashboard/UserDashboard.jsx';
-import SignIn from './pages/SignIn.jsx'
-import { AdminSideBar } from './dashboard/AdminSideBar.jsx';
-import { UserSideBar } from './dashboard/UserSideBar.jsx';
-import { ManagerSideBar } from './dashboard/ManagerSideBar.jsx';
-import AdminDashboard from './dashboard/AdminDashboard.jsx'
-import ManagerDashboard from './dashboard/ManagerDashboard.jsx'
-import AdminCalender from './admin/AdminCalender.jsx'
+import UserDashboard from './components/dashboard/UserDashboard.jsx';
+import SignIn from './components/pages/SignIn.jsx'
+import { AdminSideBar } from './components/dashboard/AdminSideBar.jsx';
+import { UserSideBar } from './components/dashboard/UserSideBar.jsx';
+import { ManagerSideBar } from './components/dashboard/ManagerSideBar.jsx';
+import AdminDashboard from './components/dashboard/AdminDashboard.jsx'
+import ManagerDashboard from './components/dashboard/ManagerDashboard.jsx'
+import AdminCalender from './components/admin/AdminCalender.jsx'
+import AddEmployee from './components/admin/AddEmployee.jsx'
+import SignUp from './components/pages/SignUp.jsx';
 
 // import Regularised from './pages/user/Regularised';
-
+import PagesCheck from './components/pages/PagesCheck.jsx'
+import LeaveApply from './components/pages/LeaveApply.jsx'
+import TeamDetails from './components/manager/TeamDetails.jsx'
+import TeamStatus from './components/manager/TeamStatus.jsx'
+import TeamLeave from './components/manager/TeamLeave.jsx'
 function App() {
   return (
     <Router>
@@ -22,6 +28,8 @@ function App() {
      <Routes>
   
       <Route path='/' element={<SignIn />} />
+      <Route path='/PagesCheck' element={<PagesCheck />} />
+      <Route path='/SignUp' element={<SignUp />} />
 
 
       
@@ -29,8 +37,18 @@ function App() {
 
 <Route path='/AdminDashboard' exact element={<AdminDashboard />}/>
 <Route path='/AdminCalender' exact element={<AdminCalender />}/>
+<Route path='/AddEmployee' exact element={<AddEmployee/>}/>
 
 <Route path='/ManagerDashboard' exact element={<ManagerDashboard/>}/>
+<Route path='/LeaveApply' exact element={<LeaveApply/>}/>
+<Route path='/TeamLeave' exact element={<TeamLeave/>}/>
+<Route path='/TeamStatus' exact element={<TeamStatus/>}/>
+<Route path='/TeamDetails' exact element={<TeamDetails/>}/>
+<Route path='/TeamLeave' exact element={<TeamLeave/>}/>
+
+
+
+
        
 
 

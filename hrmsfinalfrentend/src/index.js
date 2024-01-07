@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 
 
 import { Provider } from 'react-redux';
-import store from './slices/store';
+import store from './components/slices/store';
 
 
 

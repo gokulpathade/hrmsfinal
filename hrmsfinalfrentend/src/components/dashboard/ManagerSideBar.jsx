@@ -55,6 +55,11 @@ export const ManagerSideBar = [
     path: "/AdminCalender",
     icon: <FeedIcon />,
   },
+  {
+    title: "checking page",
+    path: "/PagesCheck",
+    icon: <FeedIcon />,
+  },
   
   {
     title: "Team Details",

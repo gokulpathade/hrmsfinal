@@ -1,6 +1,15 @@
+
+
+
+
 .App {
   text-align: center;
 }
+ body{
+  text-align: center;
+ }
+
+
 
 .App-logo {
   height: 40vmin;
@@ -31,6 +40,50 @@
 }
 
 
+
+
+
+.custom-header {
+  fontWeight: 'bold';
+  background-color: #293339; /* Set your desired background color */
+  color: white; /* Set your desired text color */
+}
+
+
+
+.css-ptkaw2-MuiDataGrid-root {
+  --unstable_DataGrid-radius: 4px;
+  --unstable_DataGrid-headWeight: 500;
+  --unstable_DataGrid-overlayBackground: rgba(255, 255, 255, 0.38);
+  --DataGrid-cellOffsetMultiplier: 2;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+  position: absolute;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(224, 224, 224, 1);
+  border-radius: var(--unstable_DataGrid-radius);
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 00;
+  font-size: 1.875rem;
+  line-height: -0.57;
+  letter-spacing: 0.01071em;
+  outline: none;
+  height: 76%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 48px;
+  min-height: 0;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow-anchor: none;
+}
 
 
 

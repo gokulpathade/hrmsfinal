@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import * as FcIcons from "react-icons/fc";
 import * as AiIcons from "react-icons/ai";
-import SideBar from "../dashboard/SideBar";
+import SideBar from "./SideBar";
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 // import b from "../../images/e.png";
 // import d from "../../images/employees-icon.png";

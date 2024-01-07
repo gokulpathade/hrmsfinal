@@ -8,7 +8,7 @@ const PasswordStrengthMeter = ({ password }) => {
   const createPassLabel = () => {
     switch(testResult.score) {
       case 0:
-        return 'Very weak';
+        return ' ';
       case 1:
         return 'Weak';
       case 2:

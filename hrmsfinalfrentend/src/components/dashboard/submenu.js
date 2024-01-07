@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
-
 
 const SidebarLink = styled(Link)`
   display: flex;
@@ -13,23 +12,12 @@ const SidebarLink = styled(Link)`
   height: 10px;
   text-decoration: none;
   font-size: 20px;
-  
+  background-color: ${({ isActive }) => (isActive ? '#c2ffe0' : 'white')};
+  transition: background-color 0.3s ease;
 
   &:hover {
-    background: ;
     background-color: #c2ffe0;
-    // padding: 15px 32px;
-    // border-left: 4px solid #632ce4;
     cursor: pointer;
-
-
-//     border: none;
-// color: white;
-// padding: 15px 32px;
-// text-align: center;
-// text-decoration: none;
-// display: inline-block;
-// font-size: 16px;
   }
 `;
 
@@ -54,26 +42,22 @@ const DropdownLink = styled(Link)`
 `;
 
 const Submenu = ({ item }) => {
-    const [subnav, setSubnav] = useState(false);
+  const [subnav, setSubnav] = useState(false);
+  const location = useLocation();
 
   const showSubnav = () => setSubnav(!subnav);
+
+  const isActive = location.pathname === item.path;
+
   return (
-   <>
-    <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
+    <>
+      <SidebarLink to={item.path} onClick={item.subNav && showSubnav} isActive={isActive}>
         <div>
-       
-             
-             
-           
           {item.icon}
           <SidebarLabel>{item.title}</SidebarLabel>
         </div>
         <div>
-          {item.subNav && subnav
-            ? item.iconOpened
-            : item.subNav
-            ? item.iconClosed
-            : null}
+          {item.subNav && subnav ? item.iconOpened : item.subNav ? item.iconClosed : null}
         </div>
       </SidebarLink>
       {subnav &&
@@ -85,8 +69,8 @@ const Submenu = ({ item }) => {
             </DropdownLink>
           );
         })}
-   </>
-  )
-}
+    </>
+  );
+};
 
-export default Submenu
+export default Submenu;
